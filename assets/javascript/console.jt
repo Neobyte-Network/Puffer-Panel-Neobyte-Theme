@@ -1,0 +1,27 @@
+function cleanConsole() {
+  var console_temp = document.getElementById("live_console").value.split("\n")
+  for(var i = console_temp.length - 1; i > 0; i--) {
+      if(/(^>)/.test(console_temp[i])) {
+         console_temp.splice(i, 1);
+      }
+  }
+  var str = ""
+  for(var i = console_temp.length -1; i > 0; i--) {
+      str = str + console_temp[i] + "\n";
+  }
+  document.getElementById("live_console").value = str
+  
+  
+  var console_temp2 = document.getElementById("live_console").value.split("\n")
+  for(var i = console_temp2.length - 1; i > 0; i--) {
+      if(/(^>)/.test(console_temp2[i])) {
+         console_temp2.splice(i, 1);
+      }
+  }
+  var str2 = ""
+  for(var i = console_temp2.length -1; i > 0; i--) {
+      str2 = str2 + console_temp2[i] + "\n";
+  }
+  document.getElementById("live_console").value = str2
+}
+window.setInterval(cleanConsole, 5)

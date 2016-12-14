@@ -1,0 +1,21 @@
+{% extends "admin_base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div class="col-md-9">
+	<ul class="breadcrumb">
+		<li class="active">Network Manager - Admin Panel </li>
+	</ul>
+	{% if installer == true %}
+		<div class="alert alert-danger"><strong>WARNING!</strong> Please remove the install/ directory from PufferPanel immediately to prevent any possible security holes.</div>
+	{% endif %}
+	<h3 class="nopad">Neobyte Network Control Panel</h3><hr />
+	<p>Welcome to the Neobyte Admin Panel, please note this is a restricted area and you should not have access to this area unless you know what you are doing! If you have access to this page and you dont think you should please talk to one of the network staff! Thanks.</p>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#sidebar_links").find("a[href='/admin/index']").addClass('active');
+});
+</script>
+{% endblock %}
