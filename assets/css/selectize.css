@@ -31,7 +31,7 @@
 .selectize-control.plugin-remove_button .disabled [data-value] .remove{border-left-color:#aaa}
 .selectize-control{position:relative}
 .selectize-dropdown,.selectize-input,.selectize-input input{color:#303030;font-family:inherit;font-size:13px;line-height:18px;-webkit-font-smoothing:inherit}
-.selectize-control.single .selectize-input.input-active,.selectize-input{background:#333;cursor:text;display:inline-block}
+.selectize-control.single .selectize-input.input-active,.selectize-input{background:#111;cursor:text;display:inline-block}
 .selectize-input{border:1px solid #9900ee;padding:8px;display:inline-block;width:100%;overflow:hidden;position:relative;z-index:1;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.1);box-shadow:inset 0 1px 1px rgba(0,0,0,.1);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 .selectize-control.multi .selectize-input.has-items{padding:5px 8px 2px}
 .selectize-input.full{background-color:#fff}
